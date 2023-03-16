@@ -1,0 +1,1 @@
+const names = ["Samy Rahim","Manel Lakrouz","Oussama Aliouchene","Lotfi Belmedrek","Malak Mehdaoui"]

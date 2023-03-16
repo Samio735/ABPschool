@@ -1,6 +1,9 @@
 .sidebar:hover{
-    transition: width 0.2s;
+    
+    
     width: max(16.66666667%,210px);
+    transition-property: width transform;
+    transition-duration:  0.2s;
 }
 
 .sidebar:hover .section-text{
@@ -8,10 +11,63 @@
 }
 
 .section:hover{
-    transform: scale(110%);
+    transform: scale(103%);
     transition: transform 0.2s;
+    opacity: 1;
 }
 
 .section{
+    opacity: 0.7;
     transition: transform 0.1s;
+}
+
+.left-side:hover{
+    transform: scale(101%);
+    transition: transform 0.2s;
+}
+
+
+.left-side{
+    transition: transform 0.2s;
+}
+
+.right-side:hover{
+    transform: scale(101%);
+    transition: transform 0.2s;
+}
+
+
+.right-side{
+    transition: transform 0.2s;
+}
+
+
+.darkswitch .bg{
+    left: 5%;
+    transition: left 0.1s;
+}
+
+
+.lightswitch .bg{
+    transition: left 0.1s;
+
+    left: 50%;
+}
+.blur{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    backdrop-filter: blur(13px);
+    background-color: rgb(240, 248, 255,0.5);
+}
+.blur-active{
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.blur-disabled{
+    opacity: 0;
+    
+    transition: opacity 0.2s;
+
 }

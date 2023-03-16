@@ -12,6 +12,7 @@
 <body  style="height: 100vh;">
 
 
+
     <div class="container-fluid h-100" style="overflow: hidden;" >
         <div class="main row" >
             <div class="sidebar border col-2 vh-100 d-flex flex-column align-items-center" style="transition: width 0.2s; background: rgba(255,255,255,0.8); "> 
@@ -91,10 +92,10 @@
 
     <div class="main-side col-10 container  gx-5"   >
             <div class="row  d-flex align-items-center w-100 " style="flex-wrap: nowrap;height: 10%;">
-                <h1 class="h1  text-dark gx-5 mt-3 col-9 ms-1" style="font-size: max(6vw,30px); ">Title text</h1>
-                <div class="d-flex w-25" style="justify-content: flex-end;" >
-                     <div class=" col-2 darkswitch d-flex rounded-pill justify-self-center  ps-1 pb-1 position-relative" style="border: #00B3FF solid 3px;width: 60px;z-index: -5;">
-                    <div class="sun me-2" style="margin-left: 1px;">
+                <h1 class="h1  text-dark gx-5 mt-3 col-9 ms-1" style="font-size: max(6vw,30px); ">Tous les etudiants</h1>
+                <div class="d-flex w-25 darkswitch" style="justify-content: flex-end;" >
+                     <div class=" col-2  d-flex rounded-pill justify-self-center  ps-1 pb-1 position-relative" style="border: #00B3FF solid 3px;width: 60px;z-index: -5;">
+                    <div class="sun me-2 " style="margin-left: 1px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
                             <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
                           </svg>
@@ -105,7 +106,7 @@
                           </svg>
                             
                     </div>
-                    <div class="bg rounded-circle bg-primary position-absolute  " style="z-index: -10; left: 5%;top: 7%; width: 43%; height: 85%;"></div>
+                    <div class="bg rounded-circle bg-primary position-absolute  " style="z-index: -10; top: 7%; width: 43%; height: 85%;"></div>
                 </div>
                 </div>
                
@@ -129,7 +130,7 @@
                                 <g mask="url(#mask0_80_5909)">
                                 </g>
                                 </svg>
-                            <p class="text-light d-none d-md-block fw-light ms-1 mb-0 overflow-hidden" >ajouter un etudiant</p>
+                            <p class="add-btn text-light d-none d-md-block fw-light ms-1 mb-0 overflow-hidden" >ajouter un etudiant</p>
                         </button>
                         <button type="button" class="btn btn-danger ms-2">
                             <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -335,7 +336,7 @@
                     <div class=" p-4 mb-1  ms-1 me-1 ">
                         <p  class=" mb-0 text-dark">Nom et prenom:</p>
                         <h1 class="mb-4  ">Samy Rahim</h1>
-                        <p  mb-0 >Numéro de téléphone:</p>
+                        <p  class="mb-0" >Numéro de téléphone:</p>
                         <h2 class=" mb-4 fs-3">078227055</h2>
                         <p class="mb-2">Cour et Formation:</p>
                         <div class="">  
@@ -363,8 +364,9 @@
             </div>
         </div>
 
-         </div>
-        </div>
+    <div class="front" style="z-index: 10; position: absolute; top: 0;">
+        <div class="blur blur-disabled"></div>
+    </div>
     
       
 
@@ -430,8 +432,8 @@
                 "> </div>
     </div>
       </div>
-
-
+      <script src="algo.js"></script>
+      <script src="script.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
