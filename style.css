@@ -1,0 +1,17 @@
+.sidebar:hover{
+    transition: width 0.2s;
+    width: max(16.66666667%,210px);
+}
+
+.sidebar:hover .section-text{
+    display: block !important; 
+}
+
+.section:hover{
+    transform: scale(110%);
+    transition: transform 0.2s;
+}
+
+.section{
+    transition: transform 0.1s;
+}
