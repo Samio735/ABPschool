@@ -1,8 +1,8 @@
 .sidebar:hover{
     
-    
+    transform: scale(101%);
     width: max(16.66666667%,210px);
-    transition-property: width transform;
+    transition-property: width ,transform;
     transition-duration:  0.2s;
 }
 
@@ -71,3 +71,5 @@
     transition: opacity 0.2s;
 
 }
+
+
