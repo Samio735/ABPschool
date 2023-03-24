@@ -5,6 +5,16 @@ const front = document.querySelector(".front")
 const ajoutPopup = document.querySelector(".ajout-popup")
 const blur = document.querySelector(".blur")
 const confirmBtn = document.querySelector(".conrimer-ajout")
+const studentState = {
+    student: true,
+    state : "general",
+    formation : "none"
+}
+const studentsTable = document.querySelectorAll(".students tr")
+const rightSide = document.querySelector(".right-side")
+const leftSide = document.querySelector(".left-side")
+
+
 
 
 darkswitch.addEventListener("click",()=>{
@@ -79,3 +89,63 @@ for (let i = 0; i < checkboxes.length; i++) {
 
 
 
+const formationBtns =  document.querySelectorAll(".formation-btn")
+const closeStdBtn =  document.querySelector(".close-student")
+
+closeStdBtn.addEventListener("click",() => {
+    studentState.student = false
+    updateState()
+})
+
+formationBtns.forEach(btn => {
+    btn.addEventListener("click",() => {
+        if(btn.getAttribute("aria-pressed")=="true"){
+            formationBtns.forEach(otherBtn => {
+                otherBtn.setAttribute("aria-pressed","false")
+                otherBtn.classList.remove("active")
+            });
+            btn.setAttribute("aria-pressed","false")
+            btn.classList.add("active")
+            studentState.state ="specific"
+        }
+        else{
+            studentState.state ="general"
+        }
+        updateState()
+    })
+});
+
+
+
+const updateState = function () {
+    if(studentState.student == true){
+        rightSide.classList.remove("d-none")
+        leftSide.classList.add("d-none")
+        document.body.classList.add("student")
+        if (studentState.state == "general"){
+            document.body.classList.add("general")
+            document.body.classList.remove("specefic")
+    
+        }
+        else{
+            document.body.classList.remove("general")
+            document.body.classList.add("specefic")
+    
+        }
+    }
+    else{
+        document.body.classList.remove("student")
+        rightSide.classList.add("d-none")
+        leftSide.classList.remove("d-none")
+
+    }
+    
+}
+console.log(studentsTable)
+
+studentsTable.forEach((student) => {
+    student.addEventListener("click",() =>{
+        studentState.student = true
+        updateState()
+    })
+})

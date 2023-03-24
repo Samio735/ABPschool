@@ -115,3 +115,22 @@
 .border{
     border: solid 1px rgba(255,255,255,0.15) !important;
 }
+
+.specefic .general-information{
+    display: none;
+}
+
+.general .specefic-information{
+    display: none;
+}
+
+.student .no-student{
+    display: none !important; 
+}
+
+.student-info{
+    display: none;
+}
+.student .student-info{
+    display: unset;
+}

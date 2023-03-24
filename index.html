@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body style="height: 100vh;">
+<body style="height: 100vh;" class="general">
 
 
 
@@ -122,7 +122,7 @@
             </div>
             <div class="row  gy-10 " style="height: 90%;">
 
-                <div class="left-side  col-md h-100  d-flex align-items-center" style="overflow: scroll;">
+                <div class="left-side   col-md h-100 d-xl-flex d-flex align-items-center" style="overflow: scroll;">
                 <div class=" w-100  container border background" style=" height: 90%;overflow: scroll;border-radius: 20px;">
                 <div class="top w-100 row align-items-center" style="height: 15%;">
                     <div class="col">
@@ -174,7 +174,7 @@
                     
                 </div>
                 <div class="bottom  row w-100 gx-0 " >
-                    <table class="table table-hover " style="overflow: scroll;">
+                    <table class="table table-hover students" style="overflow: scroll;">
                         <thead>
                             <tr>
                               <th scope="col"><div class="form-check">
@@ -357,8 +357,24 @@
             </div>
 
                             
-            <div class="right-side col-4 h-100  d-xl-flex align-items-center d-none overflow-scroll">
-                <div class=" w-100   border overflow-scroll background" style="height: 90%; border-radius: 20px;"> 
+            <div class="right-side col col-xl-4 h-100  d-xl-flex align-items-center d-none overflow-scroll">
+                <div class=" w-100   border overflow-scroll background position-relative" style="height: 90%; border-radius: 20px;"> 
+                  <div class=" w-100 h-75 d-flex justify-content-center align-items-center no-student">
+                    <svg width="302" height="299" viewBox="0 0 302 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity="0.2">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M88.5505 87.2082C88.5505 52.3248 116.135 24.9165 151.243 24.9165C186.35 24.9165 213.935 52.3248 213.935 87.2082C213.935 122.091 186.35 149.5 151.243 149.5C116.135 149.5 88.5505 122.091 88.5505 87.2082ZM264.088 236.708V261.625C264.088 269.1 259.072 274.083 251.549 274.083C244.026 274.083 239.011 269.1 239.011 261.625V236.708C239.011 215.529 222.711 199.333 201.395 199.333H101.088C79.7724 199.333 63.4724 215.529 63.4724 236.708V261.625C63.4724 269.1 58.457 274.083 50.934 274.083C43.4109 274.083 38.3955 269.1 38.3955 261.625V236.708C38.3955 201.825 65.9801 174.417 101.088 174.417H201.395C236.503 174.417 264.088 201.825 264.088 236.708ZM151.242 124.583C129.927 124.583 113.627 108.387 113.627 87.2083C113.627 66.0291 129.927 49.8333 151.242 49.8333C172.557 49.8333 188.857 66.0291 188.857 87.2083C188.857 108.387 172.557 124.583 151.242 124.583Z" fill="#212529"/>
+                      <mask id="mask0_37_948" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="38" y="24" width="227" height="251">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M88.5505 87.2082C88.5505 52.3248 116.135 24.9165 151.243 24.9165C186.35 24.9165 213.935 52.3248 213.935 87.2082C213.935 122.091 186.35 149.5 151.243 149.5C116.135 149.5 88.5505 122.091 88.5505 87.2082ZM264.088 236.708V261.625C264.088 269.1 259.072 274.083 251.549 274.083C244.026 274.083 239.011 269.1 239.011 261.625V236.708C239.011 215.529 222.711 199.333 201.395 199.333H101.088C79.7724 199.333 63.4724 215.529 63.4724 236.708V261.625C63.4724 269.1 58.457 274.083 50.934 274.083C43.4109 274.083 38.3955 269.1 38.3955 261.625V236.708C38.3955 201.825 65.9801 174.417 101.088 174.417H201.395C236.503 174.417 264.088 201.825 264.088 236.708ZM151.242 124.583C129.927 124.583 113.627 108.387 113.627 87.2083C113.627 66.0291 129.927 49.8333 151.242 49.8333C172.557 49.8333 188.857 66.0291 188.857 87.2083C188.857 108.387 172.557 124.583 151.242 124.583Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_37_948)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.78125 0H301.704V299H0.78125V0Z" fill="#212529"/>
+                      </g>
+                      </g>
+                      </svg>
+                      
+                  </div>
+                  <div class="student-info">
+                    <button type="button" class="close-student position-absolute top-0 end-0 m-4 btn-close" aria-label="Close"></button>
                     <div class=" p-4 mb-1  ms-1 me-1 ">
                         <p  class=" mb-0 ">Nom et prenom:</p>
                         <h1 class="mb-4  ">Samy Rahim</h1>
@@ -366,11 +382,12 @@
                         <h2 class=" mb-4 fs-3">078227055</h2>
                         <p class="mb-2">Cour et Formation:</p>
                         <div class="">  
-                        <div class=" mb-1 me-1 btn btn-outline-primary rounded-pill" data-bs-toggle="button" aria-pressed="true">Math 1as</div>
-                        <div class="mb-1 me-1 btn btn-outline-primary rounded-pill" data-bs-toggle="button" aria-pressed="true">Anglais 1as</div>
-                        <div class="mb-1 me-1 btn btn-outline-primary rounded-pill" data-bs-toggle="button" aria-pressed="true">Français 1as</div>
+                        <div class=" mb-1 me-1 btn btn-outline-primary rounded-pill formation-btn" data-bs-toggle="button" aria-pressed="true">Math 1as</div>
+                        <div class="mb-1 me-1 btn btn-outline-primary rounded-pill formation-btn" data-bs-toggle="button" aria-pressed="true">Anglais 1as</div>
+                        <div class="mb-1 me-1 btn btn-outline-primary rounded-pill formation-btn" data-bs-toggle="button" aria-pressed="true">Français 1as</div>
                         </div>
-                        <p class="mb-0 mt-4">Adresse Email:</p>
+                        <div class="general-information">
+                          <p class="mb-0 mt-4">Adresse Email:</p>
                         <h1 class="fs-5">s_rahim@estin.dz</h1>
                         <p class="mt-3 mb-0">Adresse et Résidence:</p>
                         <h3 class="mb-3">cite mohammadie bat 16 num 339</h3>
@@ -380,7 +397,13 @@
                               </svg></button>
                         <button type="button"class="btn btn-primary " style="color: white;" >Modifier</button>
                         </div>
+                        </div>
+                        <div class="specefic-information">
+                          specefic
+                        </div>
                     </div>
+                  </div>
+
                     </div>
                 </div>
             </div>
