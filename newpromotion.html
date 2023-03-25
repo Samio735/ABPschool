@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/custom.min.css">
+    <link rel="stylesheet" href="css/custom.min.css">
 
 </head>
 <body>
@@ -43,7 +43,6 @@
             background-image: linear-gradient(0deg, rgba(238,244,246,0.67), #B0E1F7 );
             top: 20%;
             right: -10%;
-
             "> </div>
             <div class="circle" style="
              z-index: -8;
@@ -55,7 +54,6 @@
                 background-image: linear-gradient(0deg, rgba(238,244,246,0.67), #B0E1F7 );
                 top: -10%;
                 left: 60%;
-
                 "> </div>
             <div class="circle" style="
              z-index: -30;
@@ -157,12 +155,12 @@
                     <div class="sun me-2" style="margin-left: 1px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
                             <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-                          </svg>
+                        </svg>
                     </div>
                     <div class="moon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
                             <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                          </svg>
+                        </svg>
                             
                     </div>
                     <div class="bg rounded-circle bg-primary position-absolute  " style="z-index: -5; left: 5%;top: 7%; width: 43%; height: 85%;"></div>
@@ -170,30 +168,71 @@
             </div>
             <div class="row  gy-10" style="height: 90%;">
 
-                                     
             <div class="right-side col-lg-4 col-10 h-100  d-flex align-items-center  ">
                 <div class=" w-100   border" style="height: 90%;background: rgba(255,255,255,0.8); border-radius: 20px;">
-                    <div class=" p-4 mb-1  ms-1 me-1 ">
-                        <p  class=" mb-0 text-dark">Nom et prenom:</p>
-                        <h1 class="mb-4  ">Samy Rahim</h1>
-                        <p  mb-0 >Numéro de téléphone:</p>
-                        <h2 class=" mb-4 fs-3">078227055</h2>
-                        <p class="mb-2">Cour et Formation:</p>
-                        <div class="">  
-                        <div class=" mb-1 me-1 btn btn-outline-primary rounded-pill">Math 1as</div>
-                        <div class="mb-1 me-1 btn btn-outline-primary rounded-pill">Anglais 1as</div>
-                        <div class="mb-1 me-1 btn btn-outline-primary rounded-pill">Français 1as</div>
+                    <div class="p-4">
+                        <form>
+                            <div class="mb-3">
+                                <label for="" class="form-label" style="font: bolder;"><h6> Nom de la promotion:</h6></label>
+                                <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                            </div>
+                        <div class="mb-3">
+                            <div class="form-group">
+                                <label for="inputPhoneNumber"><h6 class="mt-2"> pourcentage de la reduction</h6></label>
+                                <div style=" width: 120px;" class="input-group">
+                                    <input type="text"  class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <span style="color: gray;" class="input-group-text">%</span>
+                                </div>                            </div>
                         </div>
-                        <p class="mb-0 mt-4">Adresse Email:</p>
-                        <h1 class="fs-5">s_rahim@estin.dz</h1>
-                        <p class="mt-3 mb-0">Adresse et Résidence:</p>
-                        <h3 class="mb-3">cite mohammadie bat 16 num 339</h3>
-                        <div class="mb- d-flex justify-content-end mw-100">
-                            <button type="button" class="me-1 btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" color="white" width="16" height="16" fill="currentColor" class="mb-1 bi bi-trash3" viewBox="0 0 16 16">
-                                <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
-                            </svg></button>
-                        <button type="button"class="btn btn-primary active" style="color: white;" data-bs-toggle="button" aria-pressed="true">Modifier</button>
+                       <div class="mb-3">
+                        <label for="start-date">date de debut:</label>
+                        <div class="start-date mt-1">
+                            <input type="date" id="start-date" name="start-date">
                         </div>
+                       </div>
+                       <div class="mb-3">
+                        <div class="form-group">
+                            <label for="inputPhoneNumber"><h6 class="mt-2"> duree de la reduction</h6></label>
+                            <div style=" max-width: 150px;" class="input-group">
+                                <input type="text"  class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span style="color: gray;" class="input-group-text">m</span>
+                                <input type="text"  class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span style="color: gray;" class="input-group-text">j</span>
+                            </div>                            </div>
+                    </div>
+                    <div class=" mt-4 d- flex align-items-center">
+                        <button type="button " class="mb-1 btn btn-outline-primary" style="border-radius: 20px; padding-bottom: 4px; padding-top: 4px;" disabled >Math 1as
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor"  class="bi bi-x" viewBox="0 0 16 16">
+                                <path  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </button>
+                        <button type="button " class="mb-1 btn btn-outline-primary" style="border-radius: 20px; padding-bottom: 4px; padding-top: 4px;" disabled >Anglais 1as
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor"  class="bi bi-x" viewBox="0 0 16 16">
+                                <path  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </button>
+                        <button type="button " class="mb-1 btn btn-outline-primary" style="border-radius: 20px; padding-bottom: 4px; padding-top: 4px;" disabled >Français 2as
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor"  class="bi bi-x" viewBox="0 0 16 16">
+                                <path  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                        </button>
+
+
+                        
+                    </div>
+
+                        <button class="btn btn-primary rounded-pill mt-2" type="submit" style="color: white;">Ajouter une formation</button>
+                        
+                        </div>
+                            <div class="mb-5 me-3 d-flex justify-content-end mw-100">
+                            <button type="submit" class="btn btn-primary "style="color: white;" data-bs-toggle="button" aria-pressed="true">Confirmer</button>
+                            </div>
+                        </form>
+                    </div>
+                    
                     </div>
                     
                 </div>

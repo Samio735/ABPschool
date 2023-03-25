@@ -1,5 +1,4 @@
 
-const darkswitch = document.querySelector(".darkswitch")
 const addBtn = document.querySelector(".add-btn")
 const front = document.querySelector(".front")
 const ajoutPopup = document.querySelector(".ajout-popup")
@@ -13,15 +12,25 @@ const studentState = {
 const studentsTable = document.querySelectorAll(".students tr")
 const rightSide = document.querySelector(".right-side")
 const leftSide = document.querySelector(".left-side")
+const modifyBtn = document.querySelector(".modify-student")
+const studentInfo = document.querySelector(".student-info")
+const modifyForm = document.querySelector(".modify-student-form")
+const confirmModifyBtn = document.querySelector(".conrimer-modifier")
 
-
-
-
-darkswitch.addEventListener("click",()=>{
-        darkswitch.classList.toggle("lightswitch")
-        document.body.classList.toggle("dark")
-
+if(confirmModifyBtn){
+    confirmModifyBtn.addEventListener("click", () => {
+        studentInfo.classList.toggle("d-none")
+    modifyForm.classList.toggle("d-none")
+    })
+}
+if(modifyBtn){
+    modifyBtn.addEventListener("click" ,() => {
+    studentInfo.classList.toggle("d-none")
+    modifyForm.classList.toggle("d-none")
 })
+}
+
+
 
 if(confirmBtn){
     confirmBtn.addEventListener("click", () => {
@@ -54,8 +63,12 @@ document.addEventListener("keydown", (e) => {
 if(addBtn){
     addBtn.addEventListener("click", () => {
     front.classList.toggle("d-none")
-    ajoutPopup.classList.toggle("d-none")
-    console.log("button click")
+    if(studentState.state == "specefic" && studentState.student){
+
+    }
+    else{
+        ajoutPopup.classList.toggle("d-none")
+    }
 
 })
 
@@ -125,7 +138,7 @@ const updateState = function () {
         if (studentState.state == "general"){
             document.body.classList.add("general")
             document.body.classList.remove("specefic")
-    
+            
         }
         else{
             document.body.classList.remove("general")
