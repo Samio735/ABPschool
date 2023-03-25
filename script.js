@@ -19,7 +19,7 @@ const confirmModifyBtn = document.querySelector(".conrimer-modifier")
 
 if(confirmModifyBtn){
     confirmModifyBtn.addEventListener("click", () => {
-        studentInfo.classList.toggle("d-none")
+    studentInfo.classList.toggle("d-none")
     modifyForm.classList.toggle("d-none")
     })
 }
