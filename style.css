@@ -92,12 +92,26 @@ body{
 
 .cours-card{
     transition: transform 0.2s;
+    background:linear-gradient(120deg, #1EAEEB 50%, #0391CE )
 }
 
+.dark .cours-card{
+    background: rgba(0, 50, 72, 0.521);
+    
+}
+
+.icon{
+    fill: #003348;
+}
+.dark .icon{
+    fill:#ffffff;
+}
 
 .background{
     background: rgba(255,255,255,0.8);
+    
 }
+
 
 .dark .background{
     background: rgba(255, 255, 255, 0);
