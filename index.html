@@ -13,9 +13,9 @@
 
 
 
-    <div class="container-fluid h-100" style="overflow: hidden;" >
+    <div class="container-fluid "  >
         <div class="main row" >
-          <div class="sidebar border col-2 vh-100 d-flex flex-column align-items-center background" style="transition: width 0.2s;  "> 
+          <div class="sidebar border col-2 vh-100 d-flex flex-column align-items-center position-fixed background" style="transition: width 0.2s;  "> 
                 
             <div class="logo d-flex mt-3 justify-content-around " style="height: 10%;">
                 <svg width="80%" viewBox="0 0 99 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,9 +98,10 @@
         </a>
             </div>
         </div>
-
-    <div class="main-side col-10 container  gx-5"   >
-            <div class="row  d-flex align-items-center w-100 " style="flex-wrap: nowrap;height: 10%;">
+        <div class="col-2"></div>
+    <div class="main-side col-10 container  gx-5" style="overflow: s
+    ;"  >
+            <div class="row  d-flex align-items-center w-100 mb-3" style="flex-wrap: nowrap;height: 10%;">
                 <h1 class="h1  text gx-5 mt-3 col-9 ms-1" style="font-size: max(6vw,30px); ">Tous les etudiants</h1>
                 <div class="d-flex w-25 darkswitch" style="justify-content: flex-end;" >
                      <div class=" col-2  d-flex rounded-pill justify-self-center  ps-1 pb-1 position-relative" style="border: #00B3FF solid 3px;width: 60px;z-index: -5;">
@@ -120,29 +121,13 @@
                 </div>
                
             </div>
-            <div class="row  gy-10 " style="height: 90%;">
+            <div class="row  gy-10 " >
 
-                <div class="left-side   col-md h-100 d-xl-flex d-flex align-items-center" style="overflow: scroll;">
-                <div class=" w-100  container border background" style=" height: 90%;overflow: scroll;border-radius: 20px;">
-                <div class="top w-100 row align-items-center" style="height: 15%;">
+                <div class="left-side   col-md h-100 d-xl-flex d-flex align-items-center">
+                <div class=" w-100 p-2 container border background" style=" height: 90%;border-radius: 20px;">
+                <div class="top w-100 p-2 row align-items-center" style="height: 15%;">
                     <div class="col">
-                      <div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+                     
                         <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="recherche" aria-describedby="emailHelp">
 
                     </div>
@@ -174,8 +159,8 @@
                     </div>
                     
                 </div>
-                <div class="bottom  row w-100 gx-0 " >
-                    <table class="table table-hover students" style="overflow: scroll;">
+                <div class="bottom  row  gx-0 " >
+                    <table class="table table-hover students" >
                         <thead>
                             <tr>
                               <th scope="col"><div class="form-check">
@@ -216,6 +201,51 @@
                                     </td>
                             </tr>
                             <tr>
+                                <th scope="row"><div class="form-check">
+                                  <input class="form-check-input" data-checkbox type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                  
+                                  </label>
+                                </div></th>
+                                <td>Pam Hlapert</td>
+                                <td>0554659876</td>
+                                
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg>
+                                    </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><div class="form-check">
+                                  <input class="form-check-input" data-checkbox type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                  
+                                  </label>
+                                </div></th>
+                                <td>Pam Hlapert</td>
+                                <td>0554659876</td>
+                                
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg>
+                                    </td>
+                              </tr>
+                              <tr>
+                                <th scope="row"><div class="form-check">
+                                  <input class="form-check-input" data-checkbox type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                  
+                                  </label>
+                                </div></th>
+                                <td>Pam Hlapert</td>
+                                <td>0554659876</td>
+                                
+                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                  </svg>
+                                    </td>
+                              </tr>
+                              <tr>
                                 <th scope="row"><div class="form-check">
                                   <input class="form-check-input" data-checkbox type="checkbox" value="" id="defaultCheck1">
                                   <label class="form-check-label" for="defaultCheck1">
@@ -358,8 +388,8 @@
             </div>
 
                             
-            <div class="right-side col col-xl-4 h-100  d-xl-flex align-items-center d-none overflow-scroll">
-                <div class=" w-100   border overflow-scroll background position-relative" style="height: 90%; border-radius: 20px;"> 
+            <div class="right-side col col-xl-4 h-100  d-xl-flex align-items-center d-none " >
+                <div class=" w-100   border overflow-scroll background position-relative" style="min-height: 75vh;; border-radius: 20px;"> 
                   <div class=" w-100 h-75 d-flex justify-content-center align-items-center no-student">
                     <svg width="302" height="299" viewBox="0 0 302 299" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.2">
@@ -534,7 +564,7 @@
     
       
 
-<div class="background" style="overflow: hidden; width: 100%; height: 100%; top: 0%; right: 0%; position: absolute;z-index: -10; "> 
+<div class="background" style="overflow: hidden; width: 100%; height: 100%; top: 0%; right: 0%; position: fixed;z-index: -10; "> 
 
     <div class="grad " style="
         position: absolute;
