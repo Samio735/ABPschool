@@ -13,9 +13,9 @@
 
 
 
-    <div class="container-fluid h-100" style="overflow: hidden;" >
+    <div class="container-fluid h-100"  >
         <div class="main row" >
-          <div class="sidebar border col-2 vh-100 d-flex flex-column align-items-center background" style="transition: width 0.2s;  "> 
+          <div class="sidebar border col-2 vh-100 d-flex position-fixed flex-column align-items-center background" style="transition: width 0.2s;  "> 
                 
             <div class="logo d-flex mt-3 justify-content-around " style="height: 10%;">
                 <svg width="80%" viewBox="0 0 99 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,8 +98,8 @@
         </a>
             </div>
         </div>
-
-    <div class="main-side col-10 container  gx-5"   >
+        <div class="col-2"></div>
+    <div class="main-side col-10 container  gx-5" style="overflow: scroll;"  >
             <div class="row  d-flex align-items-center w-100 " style="flex-wrap: nowrap;height: 10%;">
                 <h1 class="h1  text gx-5 mt-3 col-9 ms-1" style="font-size: max(6vw,30px); ">Tous les formations</h1>
                 <div class="d-flex w-25 darkswitch" style="justify-content: flex-end;" >
@@ -122,9 +122,9 @@
             </div>
             <div class="row  gy-10 " style="height: 90%;">
 
-                <div class="left-side  col-md h-100  d-flex align-items-center" style="overflow: scroll;">
-                <div class=" w-100  container border background" style=" height: 90%;overflow: scroll;border-radius: 20px;">
-                  <div class="top w-100 row align-items-center" style="height: 15%;">
+                <div class="left-side  col-md h-100  d-flex align-items-center" >
+                <div class=" w-100  container border background" style=" min-height: 75vh;border-radius: 20px;">
+                  <div class="top w-100 row align-items-center p-2" style="height: 15%;">
                     <div class="col">
                         <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="recherche" aria-describedby="emailHelp">
 
@@ -190,7 +190,7 @@
                                 </label>
                               </div></th>                
 
-                              <td>    <a href="./formationInformation.html"> maths 1as</a></td>
+                              <td>    <a class="text" style="text-decoration: none;"  href="./formationInformation.html"> maths 1as</a></td>
                               <td>Cours de soutiens</td>
                               <td>saidani mahmoud</td>
                            
@@ -207,7 +207,7 @@
                                 </label>
                               </div></th>                
 
-                              <td>    <a href="./formationInformation.html"> maths 1as</a></td>
+                              <td>    <a class="text" style="text-decoration: none;"  href="./formationInformation.html"> maths 1as</a></td>
                               <td>Cours de soutiens</td>
                               <td>saidani mahmoud</td>
                            
@@ -224,7 +224,7 @@
                                 </label>
                               </div></th>                
 
-                              <td>    <a href="./formationInformation.html"> maths 1as</a></td>
+                              <td>    <a class="text" style="text-decoration: none;" href="./formationInformation.html"> maths 1as</a></td>
                               <td>Cours de soutiens</td>
                               <td>saidani mahmoud</td>
                            
@@ -315,7 +315,7 @@
     </div>
     
 
-<div class="background" style="overflow: hidden; width: 100%; height: 100%; top: 0%; right: 0%; position: absolute;z-index: -10; "> 
+<div class="background" style="overflow: hidden; width: 100%; height: 100%; top: 0%; right: 0%; position: fixed;z-index: -10; "> 
 
     <div class="grad " style="
         position: absolute;

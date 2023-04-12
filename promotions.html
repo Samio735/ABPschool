@@ -13,9 +13,9 @@
 
 
 
-    <div class="container-fluid h-100" style="overflow: hidden;" >
+    <div class="container-fluid h-100"  >
         <div class="main row" >
-          <div class="sidebar border col-2 vh-100 d-flex flex-column align-items-center background" style="transition: width 0.2s;  "> 
+          <div class="sidebar border col-2 vh-100 d-flex position-fixed flex-column align-items-center background" style="transition: width 0.2s;  "> 
                 
             <div class="logo d-flex mt-3 justify-content-around " style="height: 10%;">
                 <svg width="80%" viewBox="0 0 99 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,10 +98,10 @@
         </a>
             </div>
         </div>
-
-    <div class="main-side col-10 container  gx-5"   >
+        <div class="col-2"></div>
+    <div class="main-side col-10 container  gx-5" style="overflow: scroll;"  >
             <div class="row  d-flex align-items-center w-100 " style="flex-wrap: nowrap;height: 10%;">
-                <h1 class="h1  text gx-5 mt-3 col-9 ms-1" style="font-size: max(4vh,30px); ">Tous les promotions</h1>
+                <h1 class="h1  text gx-5 mt-3 col-9 ms-1" style="font-size: max(6vw,30px); ">Tous les formations</h1>
                 <div class="d-flex w-25 darkswitch" style="justify-content: flex-end;" >
                      <div class=" col-2  d-flex rounded-pill justify-self-center  ps-1 pb-1 position-relative" style="border: #00B3FF solid 3px;width: 60px;z-index: -5;">
                     <div class="sun me-2 " style="margin-left: 1px;">
@@ -122,25 +122,20 @@
             </div>
             <div class="row  gy-10 " style="height: 90%;">
 
-                <div class="left-side  col-md h-100  d-flex align-items-center" style="overflow: scroll;">
-                <div class=" w-100  container border background" style=" height: 90%;overflow: scroll;border-radius: 20px;">
-                  <div class="top w-100 row align-items-center" style="height: 15%;">
+                <div class="left-side  col-md h-100  d-flex align-items-center" >
+                <div class=" w-100  container border background" style=" min-height: 75vh;border-radius: 20px;">
+                  <div class="top w-100 row align-items-center p-2" style="height: 15%;">
                     <div class="col">
                         <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="recherche" aria-describedby="emailHelp">
-                
+
                     </div>
-                    <div class="col-5 d-flex gx-1 justify-content-end  ">
-                    <a href="./newpromotion.html" class="col-5"> 
-                       <div class="add-btn  d-flex gx-1 justify-content-end  ">
-                        
+                    <div class="add-btn col-5 d-flex gx-1 justify-content-end  ">
                         <button type="button" class=" add-btn-formation btn btn-primary d-inline-flex align-items-center">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-plus" viewBox="0 0 16 16">
                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                           </svg>
-                            <p class=" text-light d-none d-md-block fw-light ms-1 mb-0 overflow-hidden" >ajouter une promotion</p>
+                            <p class=" text-light d-none d-md-block fw-light ms-1 mb-0 overflow-hidden" >ajouter une formation</p>
                         </button>
-                    </div>
-                  </a>
                         <button type="button" class="btn btn-danger ms-2">
                             <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5633 5.6818H15.98V4.70452C15.98 3.04316 14.8154 1.77271 13.2925 1.77271H9.70914C8.18622 1.77271 7.02164 3.04316 7.02164 4.70452V5.6818H3.43831C2.90081 5.6818 2.54248 6.07271 2.54248 6.65907C2.54248 7.24543 2.90081 7.63634 3.43831 7.63634H4.33414V20.3409C4.33414 22.0023 5.49873 23.2727 7.02164 23.2727H15.98C17.5029 23.2727 18.6675 22.0023 18.6675 20.3409V7.63634H19.5633C20.1008 7.63634 20.4591 7.24543 20.4591 6.65907C20.4591 6.07271 20.1008 5.6818 19.5633 5.6818ZM8.81299 4.7045C8.81299 4.11814 9.17132 3.72723 9.70882 3.72723H13.2921C13.8296 3.72723 14.188 4.11814 14.188 4.7045V5.68177H8.81299V4.7045ZM15.9796 21.3181C16.5171 21.3181 16.8755 20.9272 16.8755 20.3409V7.63632H6.12549V20.3409C6.12549 20.9272 6.48382 21.3181 7.02132 21.3181H15.9796ZM10.6047 11.5454V17.409C10.6047 17.9954 10.2463 18.3863 9.70882 18.3863C9.17132 18.3863 8.81299 17.9954 8.81299 17.409V11.5454C8.81299 10.959 9.17132 10.5681 9.70882 10.5681C10.2463 10.5681 10.6047 10.959 10.6047 11.5454ZM14.1883 17.409V11.5454C14.1883 10.959 13.83 10.5681 13.2925 10.5681C12.755 10.5681 12.3966 10.959 12.3966 11.5454V17.409C12.3966 17.9954 12.755 18.3863 13.2925 18.3863C13.83 18.3863 14.1883 17.9954 14.1883 17.409Z" fill="#F53131"/>
@@ -157,139 +152,139 @@
                     
                 </div>
                 <div class="bottom  row w-100 gx-0 " >
-                  <table class="table table-hover">
-                    <thead>
-                        <tr>
-                          <th scope="col"><div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="selectAll">
-                            <label class="form-check-label" for="defaultCheck1">
-                            
-                            </label>
-                          </div></th>
-                          <th scope="col">Name <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
-                            <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
-                            </svg>
-                             </th>
-                          <th scope="col">pourcentage <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
-                            <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
-                            </svg>
-                            </th>
-                            <th scope="col">restant <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
-                                <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
-                                </svg>
-                                </th>
-                                <th scope="col">nombre de formations <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
-                                    <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
-                                    </svg>
-                                    </th>
-                          
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row"><div class="form-check">
-                            <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label ms-5" for="defaultCheck1">
-                            
-                            </label>
-                          </div></th>
-                          <td>                 
-                             <a href="./promotionInformation.html">
-                            Eid el fitre</a>
-                          </td>
-                      
-                          <td> -50%</td>
-                          <td>1 mois et 7 jours</td>
-                          <td>  12 formations</td>
-                          
-                          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
-                          </svg>
-                            </td>
-                       
-                        </tr>
-                        <tr>
-                            <th scope="row"><div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                              
-                              </label>
-                            </div></th>
-                            <td>  <a href="./promotionInformation.html">
-                              Eid el fitre</a></td>
-                            <td> -50%</td>
-                            <td> 1 mois et 7 jours</td>
-                            <td>12 formations</td>
-                            
-                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
-                            </svg>
-                              </td>
-                         
-                          </tr>
-                          <tr>
-                            <th scope="row"><div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                              
-                              </label>
-                            </div></th>
-                            <td> <a href="./promotionInformation.html">
-                              Eid el fitre</a></td>
-                            <td>-50%</td>
-                            <td>1 mois et 7 jours</td>
-                            <td>12 formations</td>
-                            
-                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
-                            </svg>
-                              </td>
-                         
-                          </tr>
-                          <tr>
-                            <th scope="row"><div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                              
-                              </label>
-                            </div></th>
-                            <td> <a href="./promotionInformation.html">
-                              Eid el fitre</a></td>
-                            <td>-50%</td>
-                            <td>1 mois et 7 jours</td>
-                            <td>12 formations</td>
-                            
-                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
-                            </svg>
-                              </td>
-                         
-                          </tr>
-                          <tr>
-                            <th scope="row"><div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                              <label class="form-check-label" for="defaultCheck1">
-                              
-                              </label>
-                            </div></th>
-                            <td> <a href="./promotionInformation.html">
-                              Eid el fitre</a></td>
-                            <td>-50%</td>
-                            <td>1 mois et 7 jours</td>
-                            <td>12 formations</td>
-                            
-                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
-                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
-                            </svg>
-                              </td>
-                         
-                          </tr>
-                      </tbody>
-                    </table>
+                 <table class="table table-hover">
+    <thead>
+        <tr>
+          <th scope="col"><div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="selectAll">
+            <label class="form-check-label" for="defaultCheck1">
+            
+            </label>
+          </div></th>
+          <th scope="col">Name <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
+            <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
+            </svg>
+             </th>
+          <th scope="col">pourcentage <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
+            <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
+            </svg>
+            </th>
+            <th scope="col">restant <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
+                <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
+                </svg>
+                </th>
+                <th scope="col">nombre de formations <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.46434 5.25L4.00023 0L0.536133 5.25H7.46434Z" fill="#343A40"/>
+                    <path d="M0.536133 10.75L4.00023 16L7.46434 10.75L0.536133 10.75Z" fill="#343A40"/>
+                    </svg>
+                    </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><div class="form-check">
+            <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label ms-5" for="defaultCheck1">
+            
+            </label>
+          </div></th>
+          <td>                 
+             <a class="text" style="text-decoration: none;" href="./promotionInformation.html">
+            Eid el fitre</a>
+          </td>
+      
+          <td> -50%</td>
+          <td>1 mois et 7 jours</td>
+          <td>  12 formations</td>
+          
+          <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+          </svg>
+            </td>
+       
+        </tr>
+        <tr>
+            <th scope="row"><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+              
+              </label>
+            </div></th>
+            <td>  <a class="text" style="text-decoration: none;" href="./promotionInformation.html">
+              Eid el fitre</a></td>
+            <td> -50%</td>
+            <td> 1 mois et 7 jours</td>
+            <td>12 formations</td>
+            
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+            </svg>
+              </td>
+         
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+              
+              </label>
+            </div></th>
+            <td> <a class="text" style="text-decoration: none;" href="./promotionInformation.html">
+              Eid el fitre</a></td>
+            <td>-50%</td>
+            <td>1 mois et 7 jours</td>
+            <td>12 formations</td>
+            
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+            </svg>
+              </td>
+         
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+              
+              </label>
+            </div></th>
+            <td> <a class="text" style="text-decoration: none;" href="./promotionInformation.html">
+              Eid el fitre</a></td>
+            <td>-50%</td>
+            <td>1 mois et 7 jours</td>
+            <td>12 formations</td>
+            
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+            </svg>
+              </td>
+         
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+              
+              </label>
+            </div></th>
+            <td> <a class="text" style="text-decoration: none;" href="./promotionInformation.html">
+              Eid el fitre</a></td>
+            <td>-50%</td>
+            <td>1 mois et 7 jours</td>
+            <td>12 formations</td>
+            
+            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+            </svg>
+              </td>
+         
+          </tr>
+      </tbody>
+    </table>
                 </div>
                     </div>
                 </div>
@@ -302,9 +297,73 @@
             </div>
         </div>
 
- 
+       
+      <div class="front d-flex justify-content-center w-100 h-100  row d-none m-0 " style=" z-index: 10; position: absolute; top: 0; ">
+        <div class="blur " style="z-index: 9;">
+        </div>
+        <div class="conatiner h-100 row position-absolute top-0 left-0 justify-content-center align-items-center " >
+           <div class="ajout-popup col-9 col-lg-4 d-none  border background" style="max-width: 400px; z-index: 20; height: 90%; border-radius: 20px;">
+            <div class="p-4">
+              <form>
+                  <div class="mb-3">
+                      <label for="" class="form-label" style="font: bolder;"><h6> Nom et Prénom:</h6></label>
+                      <input class="form-control" type="text" placeholder="" aria-label="default input example">
+                  </div>
+              <div class="mb-3">
+                  <div class="form-group">
+                      <label for="inputPhoneNumber"><h6 class="mt-2"> Numéro de Téléphone:</h6></label>
+                      <input type="tel" class="form-control" id="inputPhoneNumber"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  </div>
+              </div>
+              <div class=" mt-4 d- flex align-items-center">
+                  <button type="button " class="mb-1 btn btn-outline-primary" style="border-radius: 20px; padding-bottom: 4px; padding-top: 4px;" disabled >Math 1as
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor"  class="bi bi-x" viewBox="0 0 16 16">
+                          <path  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                  </button>
+                  <button type="button " class="mb-1 btn btn-outline-primary" style="border-radius: 20px; padding-bottom: 4px; padding-top: 4px;" disabled >Anglais 1as
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor"  class="bi bi-x" viewBox="0 0 16 16">
+                          <path  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                  </button>
+                  <button type="button " class="mb-1 btn btn-outline-primary" style="border-radius: 20px; padding-bottom: 4px; padding-top: 4px;" disabled >Français 2as
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="currentColor"  class="bi bi-x" viewBox="0 0 16 16">
+                          <path  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                  </button>
+    
+    
+                  
+              </div>
+    
+                  <button class="btn btn-primary rounded-pill mt-2" type="submit" style="color: white;">Ajouter une formation</button>
+                  <div class="mb-1">
+                  <label for="exampleInputEmail1" class="form-label "><h6 class="mt-3">Adresse Email:</h6></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  
+                  <div class="mb-4">
+                      <label for="" class="form-label mt-2"><h6>Adresse de Résidence:</h6></label>
+                      <input class=" mb-5 form-control" type="text" placeholder="" aria-label="default input example">
+                  </div>
+    
+                  <div class="mb-5 d-flex justify-content-end mw-100">
+                  <button type="submit" class="btn btn-primary "style="color: white;" data-bs-toggle="button" aria-pressed="true">Confirmer</button>
+                  </div>
+              </form>
+          </div> 
+          
+          </div>
+        </div>
+       
+       
+    </div>
+    
 
-<div class="background" style="overflow: hidden; width: 100%; height: 100%; top: 0%; right: 0%; position: absolute;z-index: -10; "> 
+<div class="background" style="overflow: hidden; width: 100%; height: 100%; top: 0%; right: 0%; position: fixed;z-index: -10; "> 
 
     <div class="grad " style="
         position: absolute;
