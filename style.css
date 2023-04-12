@@ -71,7 +71,11 @@ body{
 }
 .blur{
     backdrop-filter: blur(13px);
-    background-color: rgb(240, 248, 255,0.5);
+    background-color: rgba(219, 225, 231, 0.5);
+}
+.dark .blur{
+    background-color: rgba(28, 29, 29, 0.5);
+
 }
 .blur-active{
     opacity: 1;
