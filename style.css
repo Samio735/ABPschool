@@ -18,8 +18,10 @@ body{
     
     transform: scale(101%);
     width: max(16.66666667%,210px);
-    transition-property: width ,transform;
+    backdrop-filter: blur(15px);
+    transition-property: width ,transform,backdrop-filter;
     transition-duration:  0.2s;
+
 }
 
 .sidebar:hover .section-text{
