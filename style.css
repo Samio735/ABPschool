@@ -1,3 +1,5 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
 .standard{
     transition: background-color 0.5s;
     background-color: var(--bs-body-bg);
@@ -164,3 +166,32 @@ body{
 }
 
 
+.progress-bar{
+    border: 2px solid #003348;
+    width: 95%;
+    height: 42px;
+    border-radius: 10px;
+    position: relative;
+}
+.progress-block{
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid #003348;
+    z-index: 10;
+}
+.payment-bar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.presence-bar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+}
+.payment-block{
+    width: 20%;
+    height: 100%;
+    
+}
