@@ -2,6 +2,8 @@
 const addBtn = document.querySelector(".add-btn")
 const front = document.querySelector(".front")
 const ajoutPopup = document.querySelector(".ajout-popup")
+const ajoutPopupCours = document.querySelector(".ajout-cours")
+const ajoutPopupFormation = document.querySelector(".ajout-formation")
 const blur = document.querySelector(".blur")
 const confirmBtn = document.querySelector(".conrimer-ajout")
 const studentsTable = document.querySelectorAll(".students tr")
@@ -22,7 +24,6 @@ const addBtnFormation =  document.querySelector(".add-btn-formation")
 const studentState = {
     student: true,
     state : "general",
-    formation : "none"
 }
 
 /// add front to vue
@@ -36,7 +37,20 @@ if(addBtn){
     }
 })
 }
-
+if(addBtnCours){
+    addBtnCours.addEventListener("click", () => {
+        front.classList.remove("d-none")
+        ajoutPopupCours.classList.remove("d-none")
+        
+    })
+}
+if(addBtnFormation){
+    addBtnFormation.addEventListener("click", () => {
+        front.classList.remove("d-none")
+        ajoutPopupFormation.classList.remove("d-none")
+        
+    })
+}
 
 if(confirmModifyBtn){
     confirmModifyBtn.addEventListener("click", () => {
@@ -57,23 +71,26 @@ if(modifyBtn){
 
 
 // disable front when click on blur or esc key or submit
+const disablefront = () => {
+    ajoutPopup?.classList.add("d-none")
+    ajoutPopupCours?.classList.add("d-none")
+    ajoutPopupFormation?.classList.add("d-none")
+    front?.classList.add("d-none")
+}
 if(blur){
     blur.addEventListener("click", () => {
-    front.classList.toggle("d-none")
-    ajoutPopup.classList.toggle("d-none")
+    disablefront()
 })
 }
 document.addEventListener("keydown", (e) => {
     if(e.key == "Escape"){
-        front.classList.toggle("d-none")
-        ajoutPopup.classList.toggle("d-none")
-        console.log("escape")
+        disablefront()
+
     }
 })
 if(confirmBtn){
     confirmBtn.addEventListener("click", () => {
-    front.classList.toggle("d-none")
-    ajoutPopup.classList.toggle("d-none")
+    disablefront()
 })
 }
 
@@ -110,24 +127,24 @@ if(closeStdBtn){
 }) 
 }
 
-
-formationBtns.forEach(btn => {
-    btn.addEventListener("click",() => {
-        if(btn.getAttribute("aria-pressed")=="true"){
-            formationBtns.forEach(otherBtn => {
-                otherBtn.setAttribute("aria-pressed","false")
-                otherBtn.classList.remove("active")
-            });
-            btn.setAttribute("aria-pressed","false")
-            btn.classList.add("active")
-            studentState.state ="specific"
-        }
-        else{
-            studentState.state ="general"
-        }
-        updateState()
-    })
-});
+// // choose formation to focus on
+// formationBtns.forEach(btn => {
+//     btn.addEventListener("click",() => {
+//         if(btn.getAttribute("aria-pressed")=="true"){
+//             formationBtns.forEach(otherBtn => {
+//                 otherBtn.setAttribute("aria-pressed","false")
+//                 otherBtn.classList.remove("active")
+//             });
+//             btn.setAttribute("aria-pressed","false")
+//             btn.classList.add("active")
+//             studentState.state ="specific"
+//         }
+//         else{
+//             studentState.state ="general"
+//         }
+//         updateState()
+//     })
+// });
 
 
 /// student state
@@ -139,12 +156,10 @@ const updateState = function () {
         if (studentState.state == "general"){
             document.body.classList.add("general")
             document.body.classList.remove("specefic")
-            
         }
         else{
             document.body.classList.remove("general")
             document.body.classList.add("specefic")
-    
         }
     }
     else{
@@ -152,10 +167,10 @@ const updateState = function () {
         rightSide.classList.add("d-none")
         leftSide.classList.remove("d-none")
 
-    }
-    
+    }    
 }
 
+// choose student to focus on
 studentsTable.forEach((student) => {
     student.addEventListener("click",() =>{
         studentState.student = true
