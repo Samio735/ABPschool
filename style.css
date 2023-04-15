@@ -168,16 +168,25 @@ body{
 
 .progress-bar{
     border: 2px solid #003348;
-    width: 95%;
-    height: 42px;
+    width: 350px;
+    height: 30px;
     border-radius: 10px;
     position: relative;
 }
+.dark .progress-bar{
+    border: 2px solid #ffffff;
+
+}
 .progress-block{
-    width: 20%;
+    width: 10%;
     height: 100%;
     border-right: 2px solid #003348;
     z-index: 10;
+}
+.dark .progress-block{
+    
+    border-right: 2px solid #ffffff;
+    
 }
 .payment-bar{
     position: absolute;
@@ -191,7 +200,20 @@ body{
     z-index: 7;
 }
 .payment-block{
-    width: 20%;
+    width: 10%;
     height: 100%;
+    background: #003348 ;
     
 }
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: unset;
+}
+
+.half-opacity{
+    opacity: 0.5;
+}
+

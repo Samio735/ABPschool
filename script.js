@@ -4,11 +4,6 @@ const front = document.querySelector(".front")
 const ajoutPopup = document.querySelector(".ajout-popup")
 const blur = document.querySelector(".blur")
 const confirmBtn = document.querySelector(".conrimer-ajout")
-const studentState = {
-    student: true,
-    state : "general",
-    formation : "none"
-}
 const studentsTable = document.querySelectorAll(".students tr")
 const rightSide = document.querySelector(".right-side")
 const leftSide = document.querySelector(".left-side")
@@ -16,6 +11,32 @@ const modifyBtn = document.querySelector(".modify-student")
 const studentInfo = document.querySelector(".student-info")
 const modifyForm = document.querySelector(".modify-student-form")
 const confirmModifyBtn = document.querySelector(".conrimer-modifier")
+const navEl = document.querySelector(".sections")
+const selectAll = document.querySelector('#selectAll');
+const checkboxes = document.querySelectorAll('#defaultCheck1');
+const formationBtns =  document.querySelectorAll(".formation-btn")
+const closeStdBtn =  document.querySelector(".close-student")
+const addBtnCours =  document.querySelector(".add-btn-cours")
+const addBtnFormation =  document.querySelector(".add-btn-formation")
+
+const studentState = {
+    student: true,
+    state : "general",
+    formation : "none"
+}
+
+/// add front to vue
+if(addBtn){
+    addBtn.addEventListener("click", () => {
+    front.classList.toggle("d-none")
+    if(studentState.state == "specefic" && studentState.student){
+    }
+    else{
+        ajoutPopup.classList.toggle("d-none")
+    }
+})
+}
+
 
 if(confirmModifyBtn){
     confirmModifyBtn.addEventListener("click", () => {
@@ -32,54 +53,36 @@ if(modifyBtn){
 
 
 
-if(confirmBtn){
-    confirmBtn.addEventListener("click", () => {
-    front.classList.toggle("d-none")
-    ajoutPopup.classList.toggle("d-none")
-
-})
-}
 
 
 
+// disable front when click on blur or esc key or submit
 if(blur){
     blur.addEventListener("click", () => {
     front.classList.toggle("d-none")
     ajoutPopup.classList.toggle("d-none")
-
 })
-
 }
-
 document.addEventListener("keydown", (e) => {
     if(e.key == "Escape"){
         front.classList.toggle("d-none")
         ajoutPopup.classList.toggle("d-none")
         console.log("escape")
-
     }
 })
-
-if(addBtn){
-    addBtn.addEventListener("click", () => {
+if(confirmBtn){
+    confirmBtn.addEventListener("click", () => {
     front.classList.toggle("d-none")
-    if(studentState.state == "specefic" && studentState.student){
-
-    }
-    else{
-        ajoutPopup.classList.toggle("d-none")
-    }
-
+    ajoutPopup.classList.toggle("d-none")
 })
-
 }
 
 
 
 
-const selectAll = document.querySelector('#selectAll');
-const checkboxes = document.querySelectorAll('#defaultCheck1');
 
+
+//select all
 if(selectAll){
     selectAll.addEventListener('click', function() {
   for (let i = 0; i < checkboxes.length; i++) {
@@ -100,15 +103,13 @@ for (let i = 0; i < checkboxes.length; i++) {
 }
 }
 
-
-
-const formationBtns =  document.querySelectorAll(".formation-btn")
-const closeStdBtn =  document.querySelector(".close-student")
-
-closeStdBtn.addEventListener("click",() => {
+if(closeStdBtn){
+   closeStdBtn.addEventListener("click",() => {
     studentState.student = false
     updateState()
-})
+}) 
+}
+
 
 formationBtns.forEach(btn => {
     btn.addEventListener("click",() => {
@@ -129,7 +130,7 @@ formationBtns.forEach(btn => {
 });
 
 
-
+/// student state
 const updateState = function () {
     if(studentState.student == true){
         rightSide.classList.remove("d-none")
@@ -154,7 +155,6 @@ const updateState = function () {
     }
     
 }
-console.log(studentsTable)
 
 studentsTable.forEach((student) => {
     student.addEventListener("click",() =>{
@@ -162,3 +162,29 @@ studentsTable.forEach((student) => {
         updateState()
     })
 })
+
+
+// /// sidebar hover effect
+// navEl.addEventListener("mouseover", (e) =>{
+          
+//     if(e.target.classList.contains("section")){
+
+//      navEl.parentElement.querySelector(".logo")?.classList.add("half-opacity")
+//      const elmnts = [...navEl.children]
+//      elmnts.forEach(element => {
+//       element.classList.add("half-opacity")
+//      });
+//     }
+//     e.target.parentElement.classList.remove("half-opacity")
+//   })
+  
+//   navEl.addEventListener("mouseout",(e)=>{
+//     if(e.target.classList.contains("sections")){
+//         navEl.parentElement.querySelector(".logo")?.classList.remove("half-opacity")
+//         const elmnts = [...navEl.children]
+//         elmnts.forEach(element => {
+//          element.classList.remove("half-opacity")
+//         });
+//        }
+       
+//   })
